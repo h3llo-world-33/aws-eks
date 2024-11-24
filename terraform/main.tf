@@ -3,7 +3,7 @@
 ###############################################################################
 terraform {
   backend "s3" {
-    bucket = "hello-mrcloudbook777"
+    bucket = "861276116727-bucket-state-file"
     key    = "terraform.eks.tfstate"
     region = "us-east-1"
   }
