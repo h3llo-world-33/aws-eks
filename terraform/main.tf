@@ -3,7 +3,7 @@
 ###############################################################################
 terraform {
   backend "s3" {
-    bucket = "861276116727-bucket-state-file"
+    bucket = "054037098568-bucket-state-file"
     key    = "terraform.eks.tfstate"
     region = "us-east-1"
   }
@@ -223,6 +223,6 @@ resource "kubectl_manifest" "ebs_csi_default_storage_class" {
     type: gp3  
     fsType: ext4
     encrypted: "true"
-    kmsKeyId: "arn:aws:kms:us-east-1:861276116727:key/aa6feb80-5fc0-4241-afa6-954055ac2a06"
+    kmsKeyId: "arn:aws:kms:us-east-1:054037098568:key/aa6feb80-5fc0-4241-afa6-954055ac2a06"
   YAML
 }
