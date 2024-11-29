@@ -125,6 +125,11 @@ module "eks" {
       max_size     = 10
       desired_size = 2
 
+      # Explicitly set public IP at the node group level as well
+      network_interfaces = [{
+        associate_public_ip_address = true
+      }]
+
       block_device_mappings = {
         xvda = {
           device_name = "/dev/xvda"
