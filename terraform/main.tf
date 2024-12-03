@@ -5,7 +5,7 @@ terraform {
   backend "s3" {
     bucket = "054037098568-bucket-state-file"
     key    = "terraform.eks.tfstate"
-    region = "us-east-1"
+    region = "eu-west-2"
   }
 
   required_providers {
